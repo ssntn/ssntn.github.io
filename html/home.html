@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <style>
+
+        ul.link { 
+            list-style-type: none;
+            margin:0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        ul.link li {
+            display: inline-block;
+            margin-left: none;
+            padding: 10px;
+            text-align: center;
+        }
+        ul.link a {
+            color: black;
+            text-decoration: none;
+        }
+        ul.link img {
+            width: 32px;
+            height: 32px;
+            opacity: 1;
+        }
+        ul.link li :hover{
+            opacity: 0.7;
+        }
+
+        div.theBody{
+            margin-left: 92px;
+            display: flex; 
+            flex-direction: row;
+        }
+
+        div.myName {
+            margin-top: 150px;
+            font-size: 50px;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        div.intro {
+            font-size: 20px;
+            padding-top: 20px;
+        }
+
+        h1 {
+            font-size: 100;
+            padding: 0;
+            margin: 0;
+            height: 92px;
+        }
+        
+        h1.name {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        p.intro {
+            padding: 0px;
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="theBody">
+
+            <div>
+                <div class="myName">
+                    <h1 class="name">Ian</h1>
+                    <h1 class="name">Sisante</h1>    
+                </div>
+
+                <div class="intro">
+                    <p class="intro">Hi! I am a student currently focusing on game development!</p>
+                    <p class="intro">GAMER. CREATOR.</p> 
+                </div>
+            
+            </div>
+
+            <div style="padding-top: 100px; padding-left: 250px; width: fit-content; height: fit-content;">
+                <img src="/assets/i.png">
+            </div>        
+        </div>
+    </div>
+
+    <footer style="margin-top: 7.5%;">
+        <p style="position: absolute;right: 500px;color: white;">iansisante</p>
+
+        <ul class="link">
+            <li><a href="http://www.facebook.com/iaannnS">
+                <img src="/assets/socialMedia/fb_48.png" id="fbpng"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/mittlope">
+                    <img src="/assets/socialMedia/twt_48.png" id="twtpng"></a>
+            </li>
+            <li><a href="https://www.instagram.com/mittlope/">
+                <img src="/assets/socialMedia/ig_48.png" id="igpng"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
