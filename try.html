@@ -1,21 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Website Title</title>
-<style type="text/css">
-* {margin: 0; padding: 0;}
-#container {height: 100%; width:100%; font-size: 0;}
-#left, #middle, #right {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;}
-#left {width: 25%; background: blue;}
-#middle {width: 50%; background: green;}
-#right {width: 25%; background: yellow;}
+<style>
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: DodgerBlue;
+  width: 500px;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 5px 30px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+#names {
+    width: 200px;
+}
+
+#one {
+    width: 16%;
+}
+
+#two {
+    width: 32%;
+}
+
+#three {
+    width: 48%;
+}
+
+#four {
+    width: 80%;
+}
+
 </style>
 </head>
 <body>
-<div id="container">
-    <div id="left">Left Side Menu</div>
-    <div id="middle">Random Content</div>
-    <div id="right">Right Side Menu</div>
+
+<div style="display: flex; flex-direction: row; justify-content:center;background-color: aqua;">
+    <div class="flex-container" id="names">
+        <div>Unity</div>
+        <div>Sipag</div>
+        <div>Memes</div>
+        <div>Moral Support</div>
+    </div>
+
+    <div class="flex-container">
+    <div id="one">1</div>
+    <div id="two">2</div>
+    <div id="three">3</div> 
+    <div id="four">4</div>
+    </div>
 </div>
+
+
 </body>
 </html>
+
+
+div.name-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: aqua;
+}
+
+div.name-container > div {
+    margin: 20px 20px 5px 20px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: rgb(141, 141, 209);
+}
+
+div.smaller-container2 {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: aqua;
+}
+
+div.smaller-container2 > div {
+    margin: 20px 20px 5px 20px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: rgb(141, 141, 209);
+}
+
+

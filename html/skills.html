@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        div.bigger-container {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: aliceblue;
+        }
+
+        div.name-container {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            width: 200px;
+            font-size: 30px;
+            text-align: end;
+        }
+
+        div.name {
+            color: black;
+            margin: 10px;
+            line-height: 50px;
+        }
+
+        div.bar-container {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            width: 500px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        div.bar {
+            margin: 10px;
+            background-color: #6C63FF;
+            line-height: 50px;
+        }
+
+        #one { width: 47%; }
+        #two { width: 57%; }
+        #three { width: 47%; }
+        #four { width: 57%; }
+        #five { width: 76%; }
+        
+        
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="/html/home.html">Home</a></li>
+        <li><a href="/html/about.html">About</a></li>
+        <li><a href="/html/skills.html">Skills</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    
+    <div id="container">
+        <h2>Max score of 10</h2>
+        <div class="bigger-container" >
+            <div class="name-container">
+                <div class="name">3D</div>
+                <div class="name">2D</div>
+                <div class="name">Unity</div>
+                <div class="name">Game Music</div>
+                <div class="name">Coding</div>
+            </div>
+            <div class="bar-container">
+                <div class="bar"id="one">5</div>
+                <div class="bar" id="two">6</div>
+                <div class="bar" id="three">5</div>
+                <div class="bar" id="four">7</div>
+                <div class="bar" id="five">8</div>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+</body>
+</html>
