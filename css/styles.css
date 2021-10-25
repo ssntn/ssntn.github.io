@@ -37,3 +37,15 @@ ul.nav li :hover {
     background-color: rgb(247, 99, 12);
     color: black ;
 }
+
+div.vertical-flexer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.horizontal-flexer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
