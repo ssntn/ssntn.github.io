@@ -4,69 +4,324 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+    <title>About | Student Portfolio</title>
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
 
     <style>
-        #container {
-            margin-top:100px;
+        div.container {
+            display: flex;
+            flex-direction: row;
+            margin: 32px;
+            justify-content:center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        div.bigger-container {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 0px 8px 8px 8px;
+        }
+
+        div.name-container {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            width: 200px;
+            font-size: 21px;
+            text-align: end;
+        }
+
+        div.name {
+            color: #fff;
+            margin: 10px;
+            line-height: 40px;
+        }
+
+        div.bar-container {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            width: 500px;
+            font-size: 21px;
+            text-align: center;
+            border-radius: 8px;
+            background-color:white;
+        }
+
+        div.bar {
+            margin: 10px;
+            background-color: #6C63FF;
+            line-height: 40px;
+            border-radius: 8px 32px 32px 8px;
+        }
+
+        #picture {
+            width: 300px;
+            height: 300px;
+            border-radius: 200px;
+            background-color: black; 
+            border: solid #BDBDBD 1px; 
+            box-shadow: -1px 5px 36px rgba(0, 0, 0, 0.7)  ; 
+            -webkit-box-shadow: -1px 5px 36px rgba(0, 0, 0, 0.7)  ; 
+            -moz-box-shadow: -1px 5px 36px rgba(0, 0, 0, 0.7)  ; 
+        }
+
+        #one { width: 47%; }
+        #two { width: 57%; }
+        #three { width: 47%; }
+        #four { width: 66%; }
+        #five { width: 76%; }
+
+        div.about-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 250px;
+            width: 1500px;
+            background-color: #6B7AA1;
+        }
+
+        div.sub-about {
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.sub-about-text {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            width: 200px;
+            padding-right: 10px;
+            word-wrap: break-word;
+        }
+
+        img.about-img {
+            width: 50%;
+            height: 50%;
+        }
+
+        p.desc {
+            font-size: 21px;
+        }
+
+        #stats {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        #portfolio-title {
+            color: white;
+        }
+
+        #portfolio {
+            display: flex;
+            flex-direction: column;
+            width: 1200px;
+            align-items: center;
+            font-size: 34px;
+            color: black;
+            padding-bottom: 75px;
+        }
+
+        #portfolio-3d {
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-
-        div.roundbox {
-            display: inline-flex;
-            justify-content: space-between;
-            flex-direction: row;
-            width: 800px;
-            height: 150px;
-            border-radius: 64px;
-            background-color: white;
-            margin-bottom: 100px;
-        }
-        img.icons {
-            position: relative;
-            height: 150%;
-            bottom: 50%;
-        }
-        div.boxText {
-            display: flex;
-            margin-left: 75px;
-            align-items: center;
-            font-size: 30px;
-            color:rgb(11, 0, 26);
+            border-radius: 32px;
+            background-color: #C1CFC0;
         }
         
+        #img-3d {
+            width: 800px;
+            border-radius: 16px;
+            border-color: black;
+        }
+
+        #portfolio-2d {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: fit-content;
+            margin-top: 64px;
+            border-radius: 32px;
+            background-color: #C1CFC0
+        }
+
+        #portfolio-music {
+            margin-top: 64px;
+            background-color: #C1CFC0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 16px;
+        }
+
+        #my-music {
+            border-radius: 16px;
+
+        }
+
+        #music-desc {
+            font-size: 21px;
+        }
+
+        #centered {
+            align-items: center;
+        }
+
+        #top-img {
+            border-radius: 8px 8px 0px 0px;
+        }
+
+        #bot-img {
+            border-radius: 0px 0px 8px 8px;
+        }
+
+
     </style>
 </head>
 <body>
-    <div>
-        <ul class="nav">
-            <li><a href="/html/home.html">Home</a></li>
-            <li><a href="/html/about.html">About</a></li>
-            <li><a href="/html/skills.html">Skills</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <div class="vertical-flexer" id="nav">
 
-        <div id="container">
-            <div class="roundbox">
-                <div class="boxText">
-                    <p>Ian Sisante</p>
+        <div id="home-button-wrapper">
+            <a href="/html/home.html"><img src="/assets/svg/ian-logo.svg" id="home-button" alt="logo"></a>
+        </div>
+
+        <div class="vertical-flexer">
+            <div class="sub-nav">
+                <a href="/html/about.html" class="nav-text">About</a>
+            </div>
+            <div class="sub-nav"><a href="/html/contact.html" class="nav-text">Contact</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+
+        <div class="vertical-flexer" id="stats">
+            <img src="/assets/misc/ian.png" id="picture">
+
+
+            <div id="vertical-flexer">
+                <div class="bigger-container">
+                    <div class="name-container">
+                        <div class="name">3D</div>
+                        <div class="name">2D</div>
+                        <div class="name">Unity</div>
+                        <div class="name">Game Music</div>
+                        <div class="name">Coding</div>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar"id="one">5</div>
+                        <div class="bar" id="two">6</div>
+                        <div class="bar" id="three">5</div>
+                        <div class="bar" id="four">7</div>
+                        <div class="bar" id="five">8</div>
+                    </div>
                 </div>
-                <img src="/assets/svg/undraw_Hello_re_3evm.svg" class="icons">
+
+            </div>    
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about-div">
+
+            <div class="sub-about">
+                <div class="sub-about-text">
+                    <h3>Hobbies</h3>
+                    <p>I love playing games, solo or with friends.
+                        I can play casual and competitive. I also sometimes make or play music.
+                        I also enjoy doing 3D stuffs!</p>
+                </div>
+                <img src="/assets/svg/undraw_Gaming_re_cma2.svg" class="about-img">
             </div>
 
-            <div class="roundbox">
-                <div class="boxText" id="home">
-                    <p>Cavite, Philippines</p>
+            <div class="sub-about">
+                <div class="sub-about-text">
+                    <h4>About Me</h4>
+                    <p>I am a year 2000 child. Born on Valenzuela City, raised at Cavite. 
+                        I find a lot of things interestings to me so I always explore things 
+                        in different ways.</p>
                 </div>
-                <img src="/assets/svg/undraw_coming_home_52ir.svg" class="icons">
+                <img src="/assets/svg//undraw_coming_home_52ir.svg" class="about-img">
             </div>
+        </div>
+    </div>
+
+    <div class="vertical-flexer">
+        <div id="portfolio">
+            <h2 id="portfolio-title">Portfolio</h2>
+            <div id="portfolio-3d">
+                <img src="https://pbs.twimg.com/media/FCQrB6cUUAUoA-L?format=jpg&name=large"
+                    id="img-3d" alt="https://pbs.twimg.com/media/FCQrB6cUUAUoA-L?format=jpg&name=large">
+                <p class="desc">This is a 3D sprite posted as a fan-art for a game.</p>
+            </div>
+
+            <div id="portfolio-2d">
+                <div class="horizontal-flexer" id="centered">
+                    <img src="https://pbs.twimg.com/media/Eob-JOzUUAEPdhI?format=png&name=4096x4096" width="600px" id="top-img">
+                    <img src="/assets/portfolio/tab.png" width="600px">
+                    <img src="/assets/portfolio/valley.png" width="600px">
+                    <img src="/assets/portfolio/root.png" width="600px" id="bot-img">
+                </div>
+                <p class="desc">Posts from Pixel Dailies at Twitter</p>
+            </div>
+            
+            <div id="portfolio-music">
+                <iframe width="600px" height="400px" scrolling="no" frameborder="no" allow="autoplay" id="my-music"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/721988911&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                </iframe>
+                <p class="desc">Music inspired with 2d game spooky musics.</p>
+
+            </div>
+
         </div>
 
     </div>
-    
+
+    <div class="footer">
+        
+        <div class="horizontal-flexer" id="my-self">
+            <img src="/assets/svg/ian-logo.svg" id="footer-logo">
+            <h1 >Ian Sisante</h1>
+        </div>
+        
+        <div class="horizontal-flexer">
+            <div class="vertical-flexer">
+                <p>Follow me at: </p>
+                <ul class="link">
+                    <li><a href="http://www.facebook.com/iaannnS">
+                        <img src="/assets/socialMedia/fb_48.png" id="fbpng"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/mittlope">
+                            <img src="/assets/socialMedia/twt_48.png" id="twtpng"></a>
+                    </li>
+                    <li><a href="https://soundcloud.com/ian-sisante">
+                        <img src="/assets/svg/sc.svg" id="scpng"></a>
+                    </li>
+                    <li><a href="https://github.com/iansisante">
+                        <img src="/assets/svg/gh.svg" id="ghpng"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <p id="cr">&copy; 2021 Ian Sisante. All rights reserved.</p>
+
+        </div>
+        
+        <div class="horizontal-flexer" id="footer-quotation">
+            <h2>"Think for today as if thinking for tomorrow."</h2>
+        </div>
+    </div>
+
+
 </body>
 </html>

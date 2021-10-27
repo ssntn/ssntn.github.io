@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Student Portfolio</title>
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
     <style>
 
 
 
-        div.theBody{
-            margin-left: 92px;
-            display: flex; 
-            flex-direction: row;
+        #theBody{
+            height: 450px;
+            justify-content: space-around;
+            align-content: center;
+        }
+
+        .name {
+            color: #FF4C29;
         }
 
         div.myName {
-            margin-top: 150px;
-            font-size: 50px;
+            font-size: 64px;
             width: fit-content;
             height: fit-content;
         }
@@ -29,78 +32,56 @@
         }
 
         h1 {
-            font-size: 100;
-            padding: 0;
-            margin: 0;
-            height: 92px;
-        }
-        
-        h1.name {
-            margin: 0px;
             padding: 0px;
+            margin: 0px;
         }
 
         p.intro {
-            padding: 0px;
+            padding: 10px;
             margin: 0px;
+            font-family: Press Start;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            width: 550px;
+            word-wrap:break-word;
         }
 
+        #greetings{
+            font-size: 32px;
+            padding: 0px;
+        }
     </style>
 </head>
 <body>
-    <div>
-        <ul class="nav">
-            <li><a href="/html/home.html">Home</a></li>
-            <li><a href="/html/skills.html">About</a></li>
-        </ul>
+    <div class="vertical-flexer" id="nav">
 
-        <div class="theBody">
-
-            <div>
-                <div class="myName">
-                    <h1 class="name">Ian</h1>
-                    <h1 class="name">Sisante</h1>    
-                </div>
-
-                <div class="intro">
-                    <p class="intro">Hi! I am a student currently focusing on game development!</p>
-                    <p class="intro">GAMER. CREATOR.</p> 
-                </div>
-            
-            </div>
-
-            <div style="padding-top: 100px; padding-left: 250px; width: fit-content; height: fit-content;">
-                <img src="/assets/i.png">
-            </div>        
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="horizontal-flexer">
-            <h1 >Ian Sisante</h1>
+        <div id="home-button-wrapper">
+            <a href="/html/home.html"><img src="/assets/svg/ian-logo.svg" id="home-button" alt="logo"></a>
         </div>
 
         <div class="vertical-flexer">
-            <p>Follow me at: </p>
-            <ul class="link">
-                <li><a href="http://www.facebook.com/iaannnS">
-                    <img src="/assets/socialMedia/fb_48.png" id="fbpng"></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/mittlope">
-                        <img src="/assets/socialMedia/twt_48.png" id="twtpng"></a>
-                </li>
-                <li><a href="https://www.instagram.com/mittlope/">
-                    <img src="/assets/socialMedia/ig_48.png" id="igpng"></a>
-                </li>
-            </ul>
+            <div class="sub-nav">
+                <a href="/html/about.html" class="nav-text">About</a>
+            </div>
+            <div class="sub-nav"><a href="/html/contact.html" class="nav-text">Contact</a>
+            </div>
         </div>
-
-        
-        <div class="horizontal-flexer">
-            <p>Think today as if thinking tomorrow</p>
-        </div>
-
     </div>
+
+    <div class="vertical-flexer" id="theBody">
+
+        <div class="horizontal-flexer">
+            <h2 id="greetings">Hi! I am</h2>
+            <div class="myName">
+                <h1 class="name">Ian Sisante</h1>    
+            </div>
+            <p class="intro"> INDIE GAMER.GAME DESIGN. 3D ART. 2D ART.GAME MUSIC </p> 
+        </div>
+
+        <div class="ianLogo">
+            <img src="/assets/svg/ian-logo.svg" id="ianpng">
+        </div>        
+    </div>
+
 </body>
 </html>
