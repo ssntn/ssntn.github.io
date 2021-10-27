@@ -154,7 +154,12 @@ div.sub-nav :hover {
     text-decoration-line: none;
 }
 
-a.nav-text {
+a {
     text-decoration: none;
+}
+
+a.nav-text {
     color: white;
 }
+
+
