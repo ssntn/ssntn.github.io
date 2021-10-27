@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portfolio</title>
+    <title>Contact Me | Student Portfolio</title>
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/contact.css">
 
+    </style>
 </head>
 <body>
     <div class="vertical-flexer" id="nav">
@@ -25,20 +26,26 @@
         </div>
     </div>
 
-    <div class="vertical-flexer" id="theBody">
 
-        <div class="horizontal-flexer">
-            <h2 id="greetings">Hi! I am</h2>
-            <div class="myName">
-                <h1 class="name">Ian Sisante</h1>    
+    <div class="horizontal-flexer" id="contact-me-form">
+
+        <div class="horizontal-flexer" id="form-wrapper">
+            <div class="vertical-flexer" id="contact-from">
+                <p class="contact-texts">From: </p>
+                <textarea name="theEmail" id="email" cols="30" rows="10"></textarea>
             </div>
-            <p class="intro"> INDIE GAMER.GAME DESIGN. 3D ART. 2D ART.GAME MUSIC </p> 
+            <div class="vertical-flexer" id="contact-message">
+                <p class="contact-texts">Message: </p>
+                <textarea name="theMessage" id="message" cols="30" rows="10"></textarea>
+            </div>
+    
+            <button class="submit"><a href="contact-success.html" class="submit">Submit</a></button>
+    
         </div>
-
-        <div class="ianLogo">
-            <img src="/assets/svg/ian-logo.svg" id="ianpng">
-        </div>        
+            
     </div>
 
+ 
+    
 </body>
 </html>
