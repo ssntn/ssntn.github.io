@@ -1,22 +1,27 @@
 #theBody{
+    display: flex;
+    flex-direction: row;
     height: 450px;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
 }
 
-.name {
-    color: #FF4C29;
-}
-
 div.myName {
-    font-size: 64px;
+    font-size: 3em;
     width: fit-content;
     height: fit-content;
+    color: #FF4C29;
 }
 
 div.intro {
     font-size: 20px;
     padding-top: 20px;
+}
+
+div.ianLogo {
+    display: flex;
+    align-self: center;
+
 }
 
 h1 {
@@ -34,7 +39,41 @@ p.intro {
     word-wrap:break-word;
 }
 
+
 #greetings{
     font-size: 32px;
     padding: 0px;
+}
+
+#ianpng {
+    width: 400px;
+    box-shadow: 2px 26px 18px -19px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 2px 26px 18px -19px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 600px) {
+    #theBody{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 450px;
+        justify-content: space-around;
+        align-content: center;
+        margin-top: 1%;
+        margin-left: 2%;
+    }
+
+    #ianpng {
+        width: 250px;
+    }
+
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    p.intro {
+        font-size: 0.75em;
+        padding-bottom: 5px;
+        width: 450px;
+    }
 }

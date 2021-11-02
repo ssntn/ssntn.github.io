@@ -122,15 +122,15 @@ p.desc {
 #portfolio-3d {
     display: flex;
     flex-direction: column;
+    width: 800px;
     align-items: center;
     border-radius: 32px;
     background-color: #C1CFC0;
 }
 
 #img-3d {
-    width: 800px;
+    width: 100%;
     border-radius: 16px;
-    border-color: black;
 }
 
 #portfolio-2d {
@@ -138,6 +138,7 @@ p.desc {
     flex-direction: column;
     align-items: center;
     width: fit-content;
+    width: 800px;
     margin-top: 64px;
     border-radius: 32px;
     background-color: #C1CFC0
@@ -145,6 +146,8 @@ p.desc {
 
 #portfolio-music {
     margin-top: 64px;
+    height: 400px;
+    width: 800px;
     background-color: #C1CFC0;
     display: flex;
     flex-direction: column;
@@ -163,6 +166,7 @@ p.desc {
 
 #centered {
     align-items: center;
+    width: 800px;
 }
 
 #top-img {
@@ -171,4 +175,77 @@ p.desc {
 
 #bot-img {
     border-radius: 0px 0px 8px 8px;
+}
+
+@media (max-width: 600px) {
+    #stats {
+        margin-top: -10%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    div.bigger-container {
+        margin-top: 50px;
+    }
+
+    div.name-container {
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    div.bar-container {
+        width: 300px;
+    }
+
+    div.about-div {
+        height: 350px;
+        margin-top: -20px;
+        flex-direction: column;
+    }
+
+    div.sub-about {
+        font-size: 0.85em;
+    }
+
+    p.desc {
+        font-size: 0.4em;
+    }
+
+    #portfolio-3d {
+        width: 500px;
+    }
+    
+    #portfolio-2d {
+        width: 500px;
+    }
+
+    #centered {
+        width: 500px;
+    }
+
+    
+    #portfolio-music {
+        width: 500px;
+        height: 350px;
+    }
+
+    div.footer {
+        justify-content: space-evenly;
+    }
+
+    #footer-quotation {
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1em;
+        width: 120px;
+        margin-left: 5px;
+    }
+
+
 }

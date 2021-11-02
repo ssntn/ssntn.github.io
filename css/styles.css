@@ -24,30 +24,6 @@ body{
     color: white;
 }
 
-ul.nav { 
-    position: sticky;
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-}
-ul.nav li {
-    opacity: 1;
-    display: inline-block;
-    padding: 20px 20px 20px 20px;
-    font-size: 21px;
-    text-transform: capitalize;
-}
-
-ul.nav a {
-    color: white;
-    text-decoration: none;
-}
-
-ul.nav li :hover {
-    background-color: #FF4C29;
-    color: black ;
-}
-
 div.vertical-flexer {
     display: flex;
     flex-direction: row;
@@ -125,14 +101,6 @@ div.ianLogo {
     width: fit-content;
     height: fit-content;
 }
-
-#ianpng {
-    width: 400px;
-    box-shadow: 2px 26px 18px -19px rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: 2px 26px 18px -19px rgba(0, 0, 0, 0.25);
-}
-
-
 
 #home-button-wrapper{
     display: flex;
