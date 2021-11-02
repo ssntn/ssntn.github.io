@@ -111,7 +111,10 @@ p.desc {
 }
 
 #portfolio {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    align-self: center;
     width: 1200px;
     font-size: 34px;
     color: black;
@@ -228,7 +231,7 @@ img.img-2d {
     }
 
     #portfolio {
-        width: 400px;
+        width: 80%;
     }
 
     #portfolio-3d {

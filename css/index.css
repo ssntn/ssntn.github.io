@@ -60,7 +60,7 @@ p.intro {
         justify-content: space-around;
         align-content: center;
         align-items: center;
-        margin-top: 1%;
+        margin-top: 20%;
         margin-left: 2%;
     }
 
@@ -74,7 +74,7 @@ p.intro {
     }
 
     p.intro {
-        font-size: .7em;
+        font-size: .6em;
         width: 40em;
     }
 }
