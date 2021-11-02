@@ -130,4 +130,34 @@ a.nav-text {
     color: white;
 }
 
+@media (max-width: 600px ) {
+    div.footer {
+        justify-content: space-evenly;
+    }
+
+    #footer-quotation {
+        width: 5em;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1em;
+        width: 6em;
+        margin-left: 5px;
+    }
+
+    #fbpng, #twtpng, #ghpng {
+        width: 2em;
+        height: 2em;
+    }
+
+    #scpng {
+        width: 3em;
+        height: 3em;
+    }
+
+}
 

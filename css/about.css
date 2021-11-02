@@ -190,21 +190,29 @@ p.desc {
 
     div.name-container {
         text-align: left;
-        font-size: 1.2em;
+        font-size: 1em;
+        width: 50%;
+    }
+
+    div.name, div.bar {
+        line-height: 30px;
     }
 
     div.bar-container {
-        width: 300px;
+        width: 20em;
+        font-size: 1em;
     }
 
     div.about-div {
         height: 350px;
         margin-top: -20px;
         flex-direction: column;
+        width: 100%;
     }
 
     div.sub-about {
         font-size: 0.85em;
+        width: 100%;
     }
 
     p.desc {
@@ -212,40 +220,29 @@ p.desc {
     }
 
     #portfolio-3d {
-        width: 500px;
+        width: 400px;
     }
     
     #portfolio-2d {
-        width: 500px;
+        width: 400px;
     }
 
     #centered {
-        width: 500px;
+        width: 400px;
     }
 
     
     #portfolio-music {
-        width: 500px;
-        height: 350px;
+        width: 400px;
+        height: 300px;
     }
 
-    div.footer {
-        justify-content: space-evenly;
+    img.about-img {
+        width: 40%;
+        height: 40%;  
+        margin-top: 10%;
     }
 
-    #footer-quotation {
-        width: 120px;
-    }
-
-    h1 {
-        font-size: 1em;
-    }
-
-    h2 {
-        font-size: 1em;
-        width: 120px;
-        margin-left: 5px;
-    }
-
+ 
 
 }

@@ -51,7 +51,7 @@ p.intro {
     -webkit-box-shadow: 2px 26px 18px -19px rgba(0, 0, 0, 0.25);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     #theBody{
         display: flex;
         flex-direction: column-reverse;
@@ -73,7 +73,6 @@ p.intro {
 
     p.intro {
         font-size: 0.75em;
-        padding-bottom: 5px;
-        width: 450px;
+        width: 35em;
     }
 }
