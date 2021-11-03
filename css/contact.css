@@ -1,61 +1,62 @@
+div.about-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
 p.contact-texts {
-    padding-right: 20px;
+    font-size: 1em;
     align-self: flex-start;
 }
 
-#contact-from {
-    justify-content: right;
-    align-items:center;
+#form-wrapper {
+    align-items: center;
+    width: 40%;
 }
 
-#email {
+#from-wrapper, #message-wrapper {
+    width: fit-content;
+}
+
+textarea {
     font-size: 16px;
     height: 20px;
 }
 
-#contact-message {
-    justify-content: right;
-}
-
 #message {
-    font-size: 16px;
     height: 200px;
-}
-
-#contact-me-form {
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-#form-wrapper {
-    width: 500px;
-    margin-right: 100px;
 }
 
 button.submit {
     margin: 10px;
     align-self: flex-end;
-    width: 80px;
-}
-
-#sent {
-    padding: 20px;
-    background-color: #E7E0C9;
-    border-radius: 16px;
-    border-color: white;
-    border-style:groove;
-    border-width: 2px;
-
-    color: black;
+    width: 70px;
 }
 
 button.submit {
-    color: black
+    color: black;
+    align-self: center;
 }
 
 a.submit {
     color: black;
+}
+
+#sent {
+    text-align: center;
+    width:40%;
+    font-size: 1em;
+    padding: 15px;
+    background-color: #E7E0C9;
+    border-radius: 16px;
+    color: black;
+}
+
+
+@media (max-width: 768) {
+    div.form-wrapper {
+        margin: 100px
+    }
 }
 
