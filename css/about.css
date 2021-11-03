@@ -185,6 +185,13 @@ img.img-2d {
     border-radius: 0px 0px 32px 32px;
 }
 
+@media (min-width: 900px){
+    #picture {
+        width: 300px;
+        height: 300px;
+    }
+}
+
 @media (max-width: 768px) {
     #picture {
         width: 90%;
