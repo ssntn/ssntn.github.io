@@ -1,9 +1,10 @@
 #theBody{
     display: flex;
     flex-direction: row;
-    height: 450px;
     justify-content: center;
-    align-content: center;
+    width: 100%;
+    height: 450px;
+    justify-content: baseline;
 }
 
 div.myName {
@@ -52,7 +53,11 @@ p.intro {
     -webkit-box-shadow: 2px 26px 18px -19px rgba(0, 0, 0, 0.25);
 }
 
-@media (max-width: 600px) {
+#intro-wrapper {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
     #theBody{
         display: flex;
         flex-direction: column-reverse;
@@ -61,20 +66,40 @@ p.intro {
         align-content: center;
         align-items: center;
         margin-top: 20%;
-        margin-left: 2%;
     }
 
     #ianpng {
         width: 250px;
     }
 
+    #greetings {
+        width: 100%;
+        text-align: center;
+    }
 
-    h1 {
+    div.myName {
+        align-self: center;
+    }
+
+
+    h1.name {
         font-size: 1.2em;
+        text-align: center;
     }
 
     p.intro {
-        font-size: .6em;
-        width: 40em;
+        font-size: 0.6em;
+        width: 100%;
+        text-align: center;
+    }
+
+    #intro-wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px){
+    #theBody {
+        margin-top: 30%;
     }
 }

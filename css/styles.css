@@ -43,8 +43,7 @@ div.footer {
     flex-direction: row;
     align-items:flex-start;
     justify-content: space-around;
-    padding-bottom: 32px;
-    margin-bottom: -10px;
+    padding-bottom: 2em;
     height: 100px;
     width: 100%;
     background-color: #6B7AA1;
@@ -59,6 +58,7 @@ div.footer {
 
 #cr {
     align-self: center;
+    word-wrap: break-word;
 }
 
 #footer-quotation {
@@ -83,7 +83,7 @@ ul.link {
 ul.link li {
     display: inline-block;
     margin-left: none;
-    padding: 20px 10px;
+    padding: 10px 10px;
     text-align: center;
 }
 
@@ -130,13 +130,24 @@ a.nav-text {
     color: white;
 }
 
-@media (max-width: 600px ) {
+#footer-links {
+    align-items: center;
+}
+
+@media (max-width: 768px ) {
+    ul.link li {
+        padding: 15px 5px;
+    }
+    ul.link {
+        width: 50%;
+    }
+
     div.footer {
         justify-content: space-evenly;
     }
 
     #footer-quotation {
-        width: 5em;
+        width: 20%;
     }
 
     h1 {
@@ -144,9 +155,9 @@ a.nav-text {
     }
 
     h2 {
+        text-align: center;
         font-size: 1em;
-        width: 6em;
-        margin-left: 5px;
+        width: 100%;
     }
 
     #fbpng, #twtpng, #ghpng {

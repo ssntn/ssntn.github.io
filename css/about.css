@@ -2,16 +2,15 @@
 div.container {
     display: flex;
     flex-direction: row;
-    margin: 32px;
+    width: 100%;
     justify-content:center;
     align-items: center;
     margin-top: 30px;
 }
 
-div.bigger-container {
+#bigger-container {
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
     border-radius: 0px 8px 8px 8px;
 }
 
@@ -49,9 +48,9 @@ div.bar {
 }
 
 #picture {
-    width: 300px;
-    height: 300px;
-    border-radius: 200px;
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
     background-color: black; 
     border: solid #BDBDBD 1px; 
     box-shadow: -1px 5px 36px rgba(0, 0, 0, 0.7)  ; 
@@ -69,8 +68,9 @@ div.about-div{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 250px;
-    width: 1500px;
+    height: auto;
+    padding: 3% 0%;
+    width: 100%;
     background-color: #6B7AA1;
 }
 
@@ -101,6 +101,7 @@ p.desc {
 }
 
 #stats {
+    width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -115,7 +116,7 @@ p.desc {
     flex-direction: column;
     align-items: center;
     align-self: center;
-    width: 1200px;
+    width: 100%;
     font-size: 34px;
     color: black;
     padding-bottom: 75px;
@@ -184,15 +185,28 @@ img.img-2d {
     border-radius: 0px 0px 32px 32px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    #picture {
+        width: 90%;
+        height: 90%;
+    }
+
     #stats {
+        width: 100%;
         margin-top: -10%;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    div.bigger-container {
+    div.container {
+        width: 100%;
+    }
+
+    #bigger-container {
         margin-top: 50px;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
     }
 
     div.name-container {
@@ -211,7 +225,7 @@ img.img-2d {
     }
 
     div.about-div {
-        height: 350px;
+        height: 100%;
         margin-top: -20px;
         flex-direction: column;
         width: 100%;
