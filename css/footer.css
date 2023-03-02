@@ -5,7 +5,8 @@ footer {
 
 p#me {
     font-family: "Press Start";
-    font-size: 1.5em;
+    font-size: 0.85em;
+    color: black;
 }
 
 div#name-container {
@@ -14,10 +15,38 @@ div#name-container {
 }
 
 footer div a {
-    color: white;
+    color: #696969;
     font-size: 1em;
+    font-weight: bold;
 }
 footer div a:hover {
     color: black;
 }
 
+footer .links {
+    color: #696969;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer #link-container {
+    display: flex;
+    flex-direction: row;
+    height: 75%;
+    
+}
+
+@media (max-width: 700px){
+    .links p {
+        flex-direction: row;
+        padding: 4px;
+    }
+
+    footer #link-container{
+        flex-direction: column;
+        padding-top: 10%;
+    }
+}

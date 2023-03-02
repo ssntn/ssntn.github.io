@@ -69,15 +69,44 @@ img.about-img {
     width: 50%;
     height: 50%;
 }
-p.desc {
-    color: #dedede;
-    font-size: 0.90em;
-    align-self: center;
-}
 #stats {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+p.desc {
+    color: #696969;
+    font-size: 0.90em;
+    align-self: center;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #93c6c4;
+}
+#portfolio-art {
+    width: 50%;
+}
+
+#link-container  {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+}
+
+#profile {
+    width:50%;
+}
+
+#about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 75%;
 }
 
 #inventory {
@@ -97,14 +126,7 @@ p.desc {
     padding-left: 2em;
     font-size: 0.75em;
 }
-#inventory .inventory-item img{
-    width: 4em;
-}
 
-p.item-name{
-    color:black;
-    size: 1em
-}
 img#logo {
     width:128px;
     align-self: center;
@@ -124,21 +146,14 @@ p.a-title {
     font-size: 1em;
 }
 
+
+
+
 #portfolio-title {
     color: white;
     text-align: center;
 }
 
-#portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    width: 100%;
-    font-size: 34px;
-    color: black;
-    padding-bottom: 75px;
-}
 
 #portfolio-3d {
     display: flex;
@@ -205,80 +220,22 @@ p.a-title {
 
 }
 
-@media (max-width: 768px) {
-    #picture {
-        width: 90%;
-        height: 90%;
-    }
 
-    #stats {
-        width: 100%;
-        margin-top: -10%;
-        flex-direction: column;
-        justify-content: space-between;
+@media (max-width: 700px) {
+    div#profile {
+      display: none;
     }
-
-    div.container {
+    #about-container, #inventory, #equipment {
         width: 100%;
     }
-
-    #bigger-container {
-        margin-top: 50px;
-        width: 100%;
-        justify-content: center;
-        align-content: center;
+    #link-container  {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-evenly;
     }
-
-    div.name-container {
-        text-align: left;
-        font-size: 1em;
-        width: 50%;
-    }
-
-    div.name, div.bar {
-        line-height: 30px;
-    }
-
-    div.bar-container {
-        width: 20em;
-        font-size: 1em;
-    }
-
-    div.about-div {
-        height: 100%;
-        margin-top: -20px;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    div.sub-about {
-        font-size: 0.85em;
-        width: 100%;
-    }
-
-    p.desc {
-        font-size: 0.4em;
-    }
-
-    div.img-wrapper-2d {
-        
-    }
-
     
-    
-    #portfolio-music {
-        width: 100%;
-        height: 300px;
-    }
-
-    img.about-img {
-        width: 40%;
-        height: 40%;  
-        margin-top: 10%;
-    }
-
     #portfolio-art {
         width: 100%;
     }
-
 }
+  
